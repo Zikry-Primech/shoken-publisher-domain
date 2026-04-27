@@ -1,0 +1,16 @@
+{
+  "routes": [
+    {
+      "route": "/.well-known/microsoft-identity-association.json",
+      "allowedRoles": ["anonymous"]
+    }
+  ],
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/index.html"
+    }
+  },
+  "mimeTypes": {
+    ".json": "application/json"
+  }
+}
